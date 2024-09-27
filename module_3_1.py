@@ -31,9 +31,20 @@ def test():
 #    4
 
 
-test()
+def main():
+    string_info('jekqwjkqwl;k jl;kdjqaw;ldk qwjel;k')
+    string_info('asjl;fkqwjwl;lkefjqkl;wdfj;qwerJKL:Hjkl;qWHBKJQWBjklQWEBlkQWED')
+    string_info('PPPPPPPPPPPPPPPPPPPPPPPPPPPPP')
+    string_info('')
+    is_contains('123', ['', ''])  # Urban ~ urBAN
+    is_contains('', ['', ''])  # Urban ~ urBAN
+    is_contains('', ['1', '2'])  # Urban ~ urBAN
+    is_contains('1', ['1', '2'])  # Urban ~ urBAN
+    print(calls)
 
-#print(calls)
+
+#test()
+main()
 
 """
 2023/10/06 00:00|Домашняя работа по уроку "Пространство имён"
