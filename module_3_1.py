@@ -1,4 +1,40 @@
 
+calls = 0
+
+
+def count_calls():
+    global calls
+    calls += 1
+
+
+def string_info(s: str) -> (int, str, str):
+    count_calls()
+    return (0, '', '')
+
+
+def is_contains(s, lst) -> bool:
+    count_calls()
+    return True
+
+
+def test():
+    print(string_info('Capybara'))
+    print(string_info('Armageddon'))
+    print(is_contains('Urban', ['ban', 'BaNaN', 'urBAN']))  # Urban ~ urBAN
+    print(is_contains('cycle', ['recycling', 'cyclic']))  # No matches
+    print(calls)
+#    Вывод на консоль:
+#    (8, 'CAPYBARA', 'capybara')
+#    (10, 'ARMAGEDDON', 'armageddon')
+#    True
+#    False
+#    4
+
+
+test()
+
+#print(calls)
+
 """
 2023/10/06 00:00|Домашняя работа по уроку "Пространство имён"
 Цель: применить на практике начальные знания о пространстве имён и оператор global. Закрепить навыки из предыдущих модулей.
