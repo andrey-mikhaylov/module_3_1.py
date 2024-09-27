@@ -9,12 +9,12 @@ def count_calls():
 
 def string_info(s: str) -> (int, str, str):
     count_calls()
-    return (0, '', '')
+    return len(s), s.upper(), s.lower()
 
 
 def is_contains(s, lst) -> bool:
     count_calls()
-    return True
+    return s.upper() in [u.upper() for u in lst]
 
 
 def test():
